@@ -1,0 +1,21 @@
+[package]
+name = "suilend"
+version = "0.0.1"
+published-at = "0xbfc6127da72073545b271e2eee0e554ef34b10ba602cc7a287f28a465bd3483d"
+edition = "2024.beta"
+
+[dependencies.Sui]
+git = "https://github.com/MystenLabs/sui.git"
+subdir = "crates/sui-framework/packages/sui-framework"
+rev = "framework/mainnet"
+override = true
+ 
+[dependencies.Pyth]
+git = "https://github.com/solendprotocol/pyth-crosschain.git"
+subdir = "target_chains/sui/contracts"
+rev = "98e218c64bb75cf1350eb7b021e1ffcc3aedfd62"
+
+[addresses]
+sui = "0x2"
+suilend = "0xba79417dd36e8fa1510f53b0491b7a8b2802217a81b1401b1efbb65e4994e016"
+# suilend = "0x0"
